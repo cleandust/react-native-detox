@@ -3,12 +3,12 @@ workflows:
         name: Android Workflow
         instance_type: linux
         environment:
-            # vars:
-            #     # Android Keystore environment variables
-            #     CM_KEYSTORE: Encrypted(...) # <-- Put your encrypted keystore file here
-            #     CM_KEYSTORE_PASSWORD: Encrypted(...) # <-- Put your encrypted keystore password here
-            #     CM_KEY_ALIAS_PASSWORD: Encrypted(...) # <-- Put your encrypted keystore alias password here
-            #     CM_KEY_ALIAS_USERNAME: Encrypted(...) # <-- Put your encrypted keystore alias username here  
+            vars:
+                # Android Keystore environment variables
+                CM_KEYSTORE: Encrypted(Z0FBQUFBQmctU2xqb0FleTlkM195a0hleF83TmRmS19Gd1R5NlJMUXlHb0hjX0p6UmZzNEE4VTA4XzVJbGJMTTBQSGQ0N0diYW5aVVBjZU9OR29GVU5EejRZam94WG9aM1hEM1oxazdUUHR6MmJYMkFQNWVoNW9qdlRlNWlaWExrYU41RUV3d2pzQTdPallvMWlxN0s1eUoyWmEtOTVuM29WaC1LVkZSZEdZZGU5bmNCdTg0VFdBTk1DcV9jdG8xYVdpZm5RLXdfWkJfX0tnTXRiMGJXTlBJWF9RblJpMFJzbjhwZUpabGd3emp2TlM5NWltY1F5dHgtcXl6VXFOWkFVSXpYRkQ5eFFxRXdQNmFXUFhqWWhNeXRVRVRlRU1QOHR4b0plNjIyN2VRZUgxaDRJaFpSX1VGWkNqRVo4NV9QY2pzTXNESk1JZEJ3cFhUWHowZkhWd2Q5TmgwdkdXb0pBdVdzUVh3UGZtYW4xRWhoMU1QeXVDQmNpU1Y3OFhpOWxFWXJlZjRmT0d3SUNhV3JFbTR2V0tCelo1RlFNVUkxWGQ4a2VxakVzbklIRnpfZnIybVE0S3lhdXJEUWhGNmNfSmdSOGdYd05DaTZnWmJOMTVTMktDTGxHeUQtbGtwaVpfUE5EdTdQdlp1N1lfU0lLX0drdTZzWHZuQW9EZk9WYUZaM1p6eWQ1cWNRQmRmSmxSOERReGVJRk50QmdadXc4NXpmaEZTZUNPczRkNmxfbzl3LVB3QmVVZ3lyRGRhNGJ0aVowV2tNYU5TcEdRY19nQ1pKUFRSLVlWNFlnZndtRHFWZmFiU0RvYnpRSXQyT3hkdXdHZFp0V0xOZ0NvNzBSY2NwelV3aTVNTkRtUTZRR3RzTVIyQW5RWUp5Y1kteVNVVTlUNEo3TS1Xa3NON1JjOEFBb2FJTHZWRF9oUW9yYVlPejlhYlhCQ1ZOZUE3dEduRHlEcDRqRXVNa2Z5ZnJwQTJwNnhjZ3UwM3BaV015VU9weHBwaWozSWs2WWVBaFVHOFZvYWU1TnZfRGpYendoZTV2R1ZKaXM2QmdNdmpzUTdWbXhfdjA3bTlHbV9sOTFWcHNoWF9UNXd4dFZ6bGxpUUk5eVYzM19EQWl0Tl9zTEtCX3NLTU1GTW84dFNvbTZDSEZ6aDZFY3VKZTFoWV8zMkQtajNFMklueHhvZWM1TVV6b2RRTG5PbVB2Q1E0dkdRdGhSZHo0akFBY2wzUHEyM09iVl90OFVsa1ZhYW5aVG9JdkxJcUlyS2hUcjYtYzZzVW11UU1WOFc3Y3o4WEQtZkdHSXdIQVliVlNKbnc1TjN2ZkRiVENIT1FxTVVwM3MxOEIxa0c4WGo0SjNQZVNOWkVubFNfV1YtMGtibkN3STJMTF9SQS1vZ25BR2ppMF93OGVGNFROcWNHVUN0c0JPMW5hbE1EaWF5Y1JNTVlxUThvLTRhTkFJLWtTX0NnYzNSbzVrYXFtMW1WZHcxRGNJR3VjV0pjMGs3NFE3WHRZcVRJd3h1blZqT0JnMGg4T0M1LTVhaVpJSEFjaUNpeUhkeV80MzNyM0hsNFh4NFBMdUtuZXJ6dHdDSHg0R1NJNEhFY3JDMWlfMEdKcERZOW8zYkJLaVoya3R2OFlDaUVKdU1JMzdUMmlMckxIclRHQ3VQZFd0X1lQVHZjR1R6emh3R2JkSE1GVmQ2aWg4bHF4VlFvREt5UEw5Sm05ZWNETW03OVVLSEZzNXFjd2hzWjZ4R3hNdTFCUmxjYVRUMVdLWWVZSXBmSEFwQWJXYVZsWmIzaDNCS3ZaYV9iY0VJdkI5ZUVXVHFIYk5YWVY2VkpvWWZjcEU3UTN6VHhfeElqSzM1N2YzbktMRld3UGswVDNTS1FuTTAzMDF2dUNmSjZsTWJNTTAtNDQzU2NQcUZBc19YUmlDYm55cU9Ddk1Ua2Q2ekIwbHN1cWJ3YkR3bDVGLTRxVXBacmZZSGJwVjFROThDd3ZVeDg0aVdURlpZS3cwSm9LY1FKWnVjeUFocnBtRUE3QnhGa2tBQXVGRnRCdjQ2dkZ2MTk1QkE2ZWhVT3V1RVdDNVNtaFRQMWs0MkJrcjlGYlUwalB1NXROblY4T0pGMTk2WkdSUXVHUkRlREliZEt2UTh4U09LS1NlVF9ZQjU3V0lOWWtkRU9lQnh1bzVKdkF5T1ZVV1p2YnlPemRaanZmbm1fTUUxMnk3WmR0Ym5EZVZWRHpfTE1sU1RfaGJncW5jbXZ1MlREQktDSU1qc29JaEhMc1NLRHlROFVBM0tFcEVvdkV5d0V2WmNDR0p3X1R2c0ZNdUtIUDRTRy1HY1JMLWFEbEdOc2ZhMTJaX3lkQXVHbDNCQmdNNUVwUE80TmhKTG9WdmxjanJVWWVBX0lEVGQxV2pJZWFOZHdGMUhSTVhzZnI0b2YtMktDaTdhX2hXOGpKcnowMjBNc2EtMXJ0RERnQ29JbWJnWEhvNGoxTHl5LVdrYzJWYzhSYlU1OGpPZWsxYmF1SWI3QmhQUmhfcS0wcWRoQXd3Z0dQamdLam8tTDlmR2JhS2VtVloycjFzMGU4a2h2NEx2VmQ2UTJvRDhJcHJBTnZuM2swNi1hekllb3dyUmxsbEkwQjJnQXg2V2x6cy1PM0laQW1xcExqZnd5WTJ3SWgyNEtWUTlnWE9yMnJIODdwWFkwcjFKRnA0eFdBT1VEMWItSnM4UGNJeGpVLWc0TVFKTFhTcjY3alF6X25XTkdjNE9zMXVzeVlqNHAxc1ZkRGZyZFQ1aDQwa2tYaVBHdjdEY2JrQTFOdXlqeVhyaGRZSzItOFhrUGZUV1dFZl9KYkpEZXBKUzVDM1JXUGMwRmVNOGUyMnAxU0FVYXVqcUVyOVhmTHYxX0xaaHBhVl9tMUpBWUhlQm81WlFlakNMTkNBeFVHaU8xRjU5UXRmNVctRkN5TVRyMEt5TFlkQmxvY25fSV8zbUd1VmFycW5GQUpVV21YVjBjZFZFbFJKam02SEpFc2pyLUVvRVNzbzBKckhmXzZweEFsZ1lRODByX2JHamV2X0RpVDVVUWZKWmh1WWdDb09zTW1HTHZIa3A1WnlzRGZ4T1JHN1lJSi1NRjYtMmNvdy1FU1NSRndwdXA2SmVEWlBabzNfS2VHdVRKQ1RIbjd4djRDTTE2NFR3dmp4b3M2bDlyQWJkcDFEZEcyZDg3cVM2ekRORkw1SGpjRWF5TmRySHZBY2RGanlLb1lmWkZiUG1HWGtmTGVITG1wX2ZVaXNmQVVJWnNrX04wNkFBYU5vU0hUbG5jR1R3OWd2cGlBdGxkZnlQa2tIdFB4Y3pfNlVGWGpjMnI1bzhuZ2pSNWdXNkxGYXl3QkxORGd6cVdZNEJuOTlVdHZQa2JEWTZKVjJjVk5XSlVjakRIVEgzeW9FY0dPVmxwdGNwRXdiVEVRdk44WnBBSXg3UW9UaHdDZXl0QldRMnBrMEEwakRqU1pzVkZIOWZCM3Bsa25KOWhUNV90RG5OUWZnODY0YV8zR2xlSXhiWmQtTE5XTlFmZ0Fiai1MTWxmWUwxOTRFcmxIXzhiNkF2Q2NQank0bEg1Z29LX2J2S0hGZ1NhVFlTSUs3U2RpVlloM2w1RVRwMUZvRTJsV01GV1Z5ZWpITHFwbWtTV2E3YkV4RkxaX0NiQXY4cEJsRHJjbFE2QnN1MnpiUHZzdnFldmNjYUxvMWhsM3h4Q1duLTNIVFF4TlB0bS04ZmRtLVF1YjB3WjZLaU02b1gtX2xxRU5EMktFd04wYlY0V3RWTjdlQy11QzZ0eU1ldTNVMUJ0UlMwU21aUjRPMXFMWmNDdGFpR1pzblRQZmNEQ2JUenVMSDVYelhucl85c0RHVGVwc1lnYnl1eDg3Q2s4cGRwVU1nc3ZvWXVOR0RGTURVdGN4UFR0eTFWbzFqd2hMNGh5TXlJX2VfLVpwMlBxNWQtVmJXaklXYmF6LVQ3MUg5bTk0YXhNZTBheVRqZWRzQXNYRDY4bl9hX3FxMGxqNTY0ZjBTVWRIc25sQVZWQkhDYjBiSXpBckRLaXlRcWJlTEVzV3dvMkVPd0p6YnBLNmFoUFB6V2NmbzMzU1FGUTdBbFNQS2FTVW5NV0o1b21hNkdsZWp5UXUxWEQyNlJTcEpGdW4zdjN0ejhSY2JVX0JUZGV2Sl9keDFYX0lERzBoSnlCTGQxUXFaNnJFNHR0cHhjVk1sRWptdkZlS3VpY05Eb0ZYTzd0UVh3Y0lUeVNaUHNfLUhPSk1nMGdfU2hrUDk3YXBreUlMRU9nV2tVaGhUOW1NWHRlM3U4SzJKNWhnN0RIczZlelRiYUNmcHV3M2NxWVN6VTdkRFljNlE5bERZVnNoLTh2ZkZfbmhhd3FQSHRNT1ZCWEppVVljdDZWNVpuVkVIaXB2RVNVSFBEZE9BcmRyeEExWUhESHNDeE5WNTlHQ2pzYUZycEdmTVhvb1dTa0pxTjB5OExwdkJna3E2UUxQOU9USzY4Q3ljS01RdlUzZ2Y1LVRuY1hWejlWNnlPZWxWSjNMUG92U0FtNXAwdzM0dzNBRjhzM0M4OERKRjJfZmg5TnBWZ3VRNHB6Rl9iOTB1YVAzNDE1dWdzLU9UYW5GN3Etc1M2V1ptV1lYa3AtaTA2Yi14ZXl4bWJPWWcxRnVHRWhKSDUxdG5BNm50RUExcnZuT091alpMWVYtVkJNWnlQaThnQTBuVDdBMWtTZVNVYmVCYUdwOGpDNnZsaS1QenJkNVY0YS1zeXNfN0kzVzBKZC1vQTFYaGVqMDZxV0cwa1diNWZFNjQ1NExWaDNmS3VDM2VPUm84aWtHRjZEQ3F0OVVlUkJJenlmdElQWVR3OU9NdkkxTU5KT3o3Q21sTHptSjBCRlV4cGVQbjhTaFMydjBFUHdmU21vYjlGbjRlRkViZVhfOTVWY1JSTU0yZGJzWnNEbnJTUTREeVlsTkJWZ0MxOHJFLVc4RFFWbFZ5aE42NXdVRldyTENYNWFYTlJXSmM2UzVkX1JDWDlra3YtcWd6QnNMZE1RcHlpNjRSZ0s4dVFBcnFySHdTNVJqV3pOV3d3U1BrbmdFb1BkR2JVZXBYMmt2UmtlYmRhZ3FWT0JrTDloWGtaZUMwRWhaNXpuQVdYWnFtU0J3bnJjVVhWZmk5Z0hja1VtQnNVV2pjZjlvMVQwWEFzcUJtS25VeERrakU1eDNPVEJNTWlTbXhsal9xMjBvOTlLeEJlcGZtd3lwLW1ZMl9VUzVvNzhmaThLeU5Sd0daOC0tYmo0T0JxTjNlQXlEejNsRlJhVlRzSTBUMGhfbUtFTFdUT0pUMW14ZHZaY2d2VXh2UzI1U2U0bE15MFhHbzU0OW5QNEFGcndXWDdNclE5V1ExXzhmcXhLYWctOFFCOExJLV9hR1FMZHJVczY0VTBCOU5XMlRSdTVZM255VDBNVkV2MD0=) # <-- Put your encrypted keystore file here
+                CM_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmctU21QVzFIbVpfdDUxWjdnQkdEdDVKR29LcEFOeWdSTzR0RzF4OF9nQTdNaUgyY3BCRTNTSlBoWFFPTFctWnc2WkZKNk90T1haVG1Qd2VjZEt0aW9PMmR2X0E9PQ==) # <-- Put your encrypted keystore password here
+                CM_KEY_ALIAS_PASSWORD: Encrypted(Z0FBQUFBQmctU21QVzFIbVpfdDUxWjdnQkdEdDVKR29LcEFOeWdSTzR0RzF4OF9nQTdNaUgyY3BCRTNTSlBoWFFPTFctWnc2WkZKNk90T1haVG1Qd2VjZEt0aW9PMmR2X0E9PQ==) # <-- Put your encrypted keystore alias password here
+                CM_KEY_ALIAS_USERNAME: Encrypted(Z0FBQUFBQmctU21rdlV4bW8wczFfU001SkdYMlpPM291U2FtRUNVbU5KQ09qTzRuX2dHY1lfWjdOU09pOVV2Vkk0TU1nN1RpQk9lU2pzUEdmRmg3dHIzZXF6N2JxdjRfM1E9PQ==) # <-- Put your encrypted keystore alias username here  
             node: latest
         triggering:
             events:
@@ -30,15 +30,15 @@ workflows:
             - name: Set Android SDK location
               script: |
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/android/local.properties"
-            # - name: Set up keystore
-            #   script: |
-            #         echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
-            #         cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
-            #         storePassword=$CM_KEYSTORE_PASSWORD
-            #         keyPassword=$CM_KEY_ALIAS_PASSWORD
-            #         keyAlias=$CM_KEY_ALIAS_USERNAME
-            #         storeFile=/tmp/keystore.keystore
-            #         EOF
+            - name: Set up keystore
+              script: |
+                    echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+                    cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+                    storePassword=$CM_KEYSTORE_PASSWORD
+                    keyPassword=$CM_KEY_ALIAS_PASSWORD
+                    keyAlias=$CM_KEY_ALIAS_USERNAME
+                    storeFile=/tmp/keystore.keystore
+                    EOF
             - name: Build with Detox
               script: |
                 #!/bin/sh
@@ -60,8 +60,10 @@ workflows:
         publishing:
             email:
                 recipients:
-                    - user1@example.com
-                    - user2@example.com
+                    - nihal@nevercode.io
+                notify:
+                    success: true
+                    failure: false
             google_play:                          # For publishing your Android app to Google Play
                 credentials: Encrypted(...)       # <-- Put your Encrypted JSON key file for Google Play service account here
                 track: alpha                      # Name of the track: internal, alpha, beta, production
