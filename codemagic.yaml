@@ -64,6 +64,3 @@ workflows:
                 notify:
                     success: true
                     failure: false
-            google_play:                          # For publishing your Android app to Google Play
-                credentials: Encrypted(...)       # <-- Put your Encrypted JSON key file for Google Play service account here
-                track: alpha                      # Name of the track: internal, alpha, beta, production
