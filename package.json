@@ -31,5 +31,13 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icarusdust/react-native-detox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/icarusdust/react-native-detox/issues"
+  },
+  "homepage": "https://github.com/icarusdust/react-native-detox#readme",
   "description": ""
 }
